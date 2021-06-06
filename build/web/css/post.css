@@ -1,0 +1,29 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 30-May-2021, 5:45:22 pm
+    Author     : ANIKET GHULE
+*/
+
+.post-title {
+    font-weight: 100;
+    font-szie:30px;
+    
+}
+
+
+.post-content{
+    font-weight: 100;
+    font-size:20px;
+}
+
+row-user{
+    
+    
+    border:1 px solid #e2e2e2;
+    
+}
+

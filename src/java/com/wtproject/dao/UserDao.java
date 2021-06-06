@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package com.wtproject.dao;
+import com.wtproject.entities.Post;
 import com.wtproject.entities.Users;
 import java.sql.*;
 /**
@@ -26,17 +27,14 @@ public class UserDao {
         try{
            // user-->>Databse
            
-           String query="insert into user(name,email,password,confirm_password,dob,rollno,regid,pno) values(?,?,?,?,?,?,?,?)";
+           String query="insert into user(name,email,password,confirm_password,about) values(?,?,?,?,?)";
            PreparedStatement pstmt=this.conn.prepareStatement(query);
            pstmt.setString(1,user.getName());
            pstmt.setString(2,user.getEmail());
            pstmt.setString(3,user.getPassword());
            pstmt.setString(4,user.getConfim_password());
-           pstmt.setString(5,user.getDob());
-           pstmt.setString(6,user.getRollno());
-           pstmt.setString(7,user.getRegid());
-           pstmt.setString(8,user.getPno());
-
+           pstmt.setString(5,user.getAbout());
+           
            pstmt.executeUpdate();
            f=true;
          }
@@ -70,12 +68,10 @@ public class UserDao {
                 user.setName(name);
                 user.setId(set.getInt("id"));
                 user.setEmail(set.getString("email"));   
-                user.setDob(set.getString("dob"));   
+                
                 user.setPassword(set.getString("password"));   
                 user.setConfim_password(set.getString("confirm_password"));   
-                user.setRegid(set.getString("regid"));           
-                user.setRollno(set.getString("rollno"));   
-                user.setPno(set.getString("pno")); 
+                user.setAbout(set.getString("about"));
                 user.setProfile(set.getString("profile"));
             }
             
@@ -84,6 +80,66 @@ public class UserDao {
         {
             e.printStackTrace();
         }
+        
+        return user;
+    }
+    
+    
+    
+    public boolean updateUser(Users user)
+    {
+        boolean f=false;
+        try{
+            String query="update user set name=?, email=?, password=?, confirm_password=?, about=?, profile=? where id=?";
+            PreparedStatement p=conn.prepareStatement(query);
+            p.setString(1,user.getName());
+            p.setString(2,user.getEmail());
+            p.setString(3,user.getPassword());
+            p.setString(4,user.getPassword());
+            p.setString(5,user.getAbout());
+            p.setString(6,user.getProfile());
+            p.setInt(7, user.getId());
+            
+            p.executeUpdate();
+            f=true;
+            
+        }
+        catch(Exception e )
+        {
+            e.printStackTrace();
+        }
+        
+        return f;
+    }
+    
+    
+    public Users getuserPostbyID(int userid)
+    {
+       Users user=null;
+       try{
+       Statement pstmt= conn.createStatement();
+            ResultSet set=pstmt.executeQuery("select * from user where id = "+userid+"");
+            
+            if(set.next())
+            {
+                
+                 user=new Users();
+                String name=set.getString("name");
+                
+                // fetch data from user and set into user object
+                user.setName(name);
+                user.setId(set.getInt("id"));
+                user.setEmail(set.getString("email"));   
+                
+                user.setPassword(set.getString("password"));   
+                user.setConfim_password(set.getString("confirm_password"));   
+                user.setAbout(set.getString("about"));
+                user.setProfile(set.getString("profile"));
+            }
+       } catch(Exception e)
+       {
+           e.printStackTrace();
+       }
         
         return user;
     }

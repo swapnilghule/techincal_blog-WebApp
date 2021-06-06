@@ -10,7 +10,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Student Mentor system</title>
+        <title>Technology Blog</title>
           <!--css-->
           <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
@@ -34,15 +34,9 @@
         <div class="container-fluid p-0 m-0 ">
             <div class="jumbotron padding primary-background banner-background text-white">
                 <div class="container padding">
-                <h3 class="display-4"> Student Mentoring  </h3>
+                <h3 class="display-4"> Technical Blog  </h3>
                 <p>Hello users ...!!! </p>
-                 <p>This system allows only the registered students to login into the system which prevents unauthorized access.
-                    The students can view their hall ticket by just clicking on link provided by admin via e-mail.
-                    The students can even update their details as and when required.
-                    Faster exam registration.
-                    Easy result generation.
-                    Improved accuracy of student data.
-                    Better convenience for students.</p>
+                 <p>Technical blogging is a great way to share your expertise while building a potentially valuable readership. It can help you to document projects, or provide guidance to other web users. You can also monetize your content, or use your blog to market your services..</p>
                  
                  
                  <a href="register.jsp" class="btn btn-outline-dark btn-lg text-white  bg-dark ml-12 "><span class="fa fa-user-plus ml-12"></span>Register Now !! </a>
@@ -67,27 +61,25 @@
   <div class="col-sm-4">
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary bg-dark">Know More</a>
+        <h5 class="card-title">Share Your Knowledge</h5>
+        <p class="card-text">Share your knowledge as you explore the site you can see your blogs and category wise.</p>
       </div>
     </div>
   </div>
   <div class="col-sm-4">
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary bg-dark">Know More</a>
+        <h5 class="card-title">Gain Some Knowledge </h5>
+        <p class="card-text"> Gain Knowledge from different professionals and explore the different technology background like ML, java, python and many more..!!!!!!!</p>
+        <a href="register.jsp" class="btn btn-primary bg-dark">Go and Register Now...!!!</a>
       </div>
     </div>
   </div>
      <div class="col-sm-4">
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary bg-dark">Know More</a>
+        <h5 class="card-title"> Choose your category</h5>
+        <p class="card-text"> Category, field you want is open for all. register and login to explore the site....!!! Now..!!!</p>
       </div>
     </div>
   </div>

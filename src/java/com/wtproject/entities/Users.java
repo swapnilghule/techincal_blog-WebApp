@@ -11,8 +11,17 @@ package com.wtproject.entities;
  */
 public class Users {
     private int id;
-    private String name,email,password,confim_password,regid,rollno,dob,Pno,profile;
+    private String name,email,password,confim_password,profile,about,regdate;
 
+    public String getDateTime() {
+        return regdate;
+    }
+
+    public void setDateTime(String DateTime) {
+        this.regdate = DateTime;
+    }
+
+   
     public String getProfile() {
         return profile;
     }
@@ -21,29 +30,33 @@ public class Users {
         this.profile = profile;
     }
 
-    public Users(int id, String name, String email, String password, String confim_password, String regid, String rollno, String dob, String Pno) {
+    public Users(int id, String name, String email, String password, String confim_password,String about) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.password = password;
         this.confim_password = confim_password;
-        this.regid = regid;
-        this.rollno = rollno;
-        this.dob = dob;
-        this.Pno = Pno;
+        this.about=about;
+   
     }
 
-    public Users(String name, String email, String password, String confim_password, String regid, String rollno, String dob, String Pno) {
+    public String getAbout() {
+        return about;
+    }
+
+    public void setAbout(String about) {
+        this.about = about;
+    }
+
+    public Users(String name, String email, String password, String confim_password, String about) {
         this.name = name;
         this.email = email;
         this.password = password;
         this.confim_password = confim_password;
-        this.regid = regid;
-        this.rollno = rollno;
-        this.dob = dob;
-        this.Pno = Pno;
+        this.about=about;
+ 
     }
-
+    
     public Users() {
     }
 
@@ -87,39 +100,7 @@ public class Users {
         this.confim_password = confim_password;
     }
 
-    public String getDob() {
-        return regid;
-    }
-
-    public void setRegid(String regid) {
-        this.regid = regid;
-    }
-
-    public String getRollno() {
-        return rollno;
-    }
-
-    public void setRollno(String rollno) {
-        this.rollno = rollno;
-    }
-
-    public String getRegid() {
-        return dob;
-    }
-
-    public void setDob(String dob) {
-        this.dob = dob;
-    }
-
-    public String getPno() {
-        return Pno;
-    }
-
-    public void setPno(String Pno) {
-        this.Pno = Pno;
-    }
-    
-    
+  
 
    
   

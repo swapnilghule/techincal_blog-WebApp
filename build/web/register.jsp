@@ -44,7 +44,7 @@
                               Register Here
                           </div>
                           <div class="card-body">
-                                  <form id="reg-form" action="RegisterServlet" methods="POST" class="form">
+                                  <form name="form" id="reg-form" action="RegisterServlet" methods="POST" class="form">
                                       
                                             <div class="mb-3 form-field">
                                               <label for="user_name" class="form-label">Student Name</label>
@@ -72,38 +72,19 @@
                                               <input type="password" placeholder="confirm Password" name="confirm_password" class="form-control" id="confirm-password" >
                                                 <small style="color: red;"></small>
                                              </div>
-                                      
-                                            <div class="mb-3 form-field"> 
-                                            <label for="user_dob">Date of Birth</label>
-                                            <input type="text" placeholder="Enter DOB" class="form-control" name="user_dob" id="dob" autocomplete="off">
-                                              <small style="color: red;"></small>
-                                            </div>
-                                      
-                                           
-                                            <div class="mb-3 form-field">
-                                              <label for="user_regid" class="form-label">Registration ID</label>
-                                              <input type="text" name="user_regid" class="form-control" id="regid" aria-describedby="regid" placeholder="Enter Reg. ID" autocomplete="off">
-                                                 <small style="color: red;"></small>
 
-                                            </div>
                                       
-                                             <div class="mb-3 form-field">
-                                              <label for="user_rollno" class="form-label">Roll No.</label>
-                                              <input type="text" name="user_rollno" class="form-control" id="roll" aria-describedby="year" placeholder="(e.g) 31384" autocomplete="off">
-                                                 <small style="color: red;"></small>
-
-                                            </div>
-                                      
+                                       
                                            
                                       
-                                            <div class="mb-3 form-field">
-                                              <label for="user_no" class="form-label">Contact No.</label>
-                                              <input type="text" class="form-control" name="user_no"  id="Pno" aria-describedby="year" placeholder="Enter 10-digit phone number" autocomplete="off">
-                                                  <small style="color: red;"></small>
-
-                                            </div>
+                                             <div class="mb-3 form-field"> 
+                                                 <textarea name="about" class="form-control" id="" cols="30" rows="5" placeholder="Enter something about yourself"></textarea>
+                                             </div>
                                       
-                                           
+                                      
+                                      
+                                          
+                                      
                                       
                                           
                                       
@@ -126,7 +107,7 @@
                            
                   </div>
 </div>
-    <script src="js/myjs.js" type="text/javascript"></script>
+    <script src="js/MyNewJS.js" type="text/javascript"></script>
 </main>
 
 

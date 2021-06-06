@@ -1,5 +1,5 @@
                          <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white">
-                             <a class="navbar-brand" href="index.jsp"><span class="fa fa-mortar-board"></span>Student Mentoring </a>
+                             <a class="navbar-brand" href="index.jsp"><span class="fa fa-mortar-board"></span>Technical Blog </a>
                               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                               </button>
@@ -18,23 +18,9 @@
                                   </li>
                                   
                                   <li class="nav-item">
-                                    <a class="nav-link" href="#"><span class="fa fa-book ">Contact</a>
+                                    <a class="nav-link" href="contact.jsp"><span class="fa fa-book ">Contact</a>
                                   </li>
-                                  <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      About university
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                      <a class="dropdown-item" href="#"> Exam Circular</a>
-                                      <a class="dropdown-item" href="#"></a>
-                                      <div class="dropdown-divider"></div>
-                                      <a class="dropdown-item" href="#">FE</a>
-                                      <a class="dropdown-item" href="#">SE</a>
-                                      <a class="dropdown-item" href="#">TE</a>
-                                      <a class="dropdown-item" href="#">BE</a>
-
-                                    </div>
-                                  </li>
+                                  
                                  
                                 </ul>
                                   

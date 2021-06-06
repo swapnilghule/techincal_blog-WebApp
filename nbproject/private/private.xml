@@ -3,19 +3,31 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/ANIKET%20GHULE/Documents/NetBeansProjects/Web_Tech_Project/web/js/myjs.js</file>
-            <file>file:/C:/Users/ANIKET%20GHULE/Documents/NetBeansProjects/Web_Tech_Project/src/java/com/wtproject/servlets/login.java</file>
+            <file>file:/C:/Users/ANIKET%20GHULE/Documents/NetBeansProjects/Web_Tech_Project/src/java/com/wtproject/servlets/AddPostServlet.java</file>
             <file>file:/C:/Users/ANIKET%20GHULE/Documents/NetBeansProjects/Web_Tech_Project/web/profile.jsp</file>
+            <file>file:/C:/Users/ANIKET%20GHULE/Documents/NetBeansProjects/Web_Tech_Project/web/css/post.css</file>
+            <file>file:/C:/Users/ANIKET%20GHULE/Documents/NetBeansProjects/Web_Tech_Project/web/js/load_post.js</file>
             <file>file:/C:/Users/ANIKET%20GHULE/Documents/NetBeansProjects/Web_Tech_Project/src/java/com/wtproject/entities/Message.java</file>
+            <file>file:/C:/Users/ANIKET%20GHULE/Documents/NetBeansProjects/Web_Tech_Project/src/java/com/wtproject/dao/PostDao.java</file>
+            <file>file:/C:/Users/ANIKET%20GHULE/Documents/NetBeansProjects/Web_Tech_Project/src/java/com/wtproject/entities/Post.java</file>
+            <file>file:/C:/Users/ANIKET%20GHULE/Documents/NetBeansProjects/Web_Tech_Project/web/show_blog_page.jsp</file>
             <file>file:/C:/Users/ANIKET%20GHULE/Documents/NetBeansProjects/Web_Tech_Project/web/login_page.jsp</file>
-            <file>file:/C:/Users/ANIKET%20GHULE/Documents/NetBeansProjects/Web_Tech_Project/src/java/com/wtproject/helper/ConnectionProvider.java</file>
-            <file>file:/C:/Users/ANIKET%20GHULE/Documents/NetBeansProjects/Web_Tech_Project/web/error_page.jsp</file>
-            <file>file:/C:/Users/ANIKET%20GHULE/Documents/NetBeansProjects/Web_Tech_Project/src/java/com/wtproject/dao/UserDao.java</file>
             <file>file:/C:/Users/ANIKET%20GHULE/Documents/NetBeansProjects/Web_Tech_Project/src/java/com/wtproject/entities/Users.java</file>
             <file>file:/C:/Users/ANIKET%20GHULE/Documents/NetBeansProjects/Web_Tech_Project/web/normal_navbar.jsp</file>
+            <file>file:/C:/Users/ANIKET%20GHULE/Documents/NetBeansProjects/Web_Tech_Project/src/java/com/wtproject/servlets/LogoutServlet.java</file>
+            <file>file:/C:/Users/ANIKET%20GHULE/Documents/NetBeansProjects/Web_Tech_Project/src/java/com/wtproject/servlets/EditServlet.java</file>
+            <file>file:/C:/Users/ANIKET%20GHULE/Documents/NetBeansProjects/Web_Tech_Project/src/java/com/wtproject/servlets/login.java</file>
+            <file>file:/C:/Users/ANIKET%20GHULE/Documents/NetBeansProjects/Web_Tech_Project/web/load_post.jsp</file>
+            <file>file:/C:/Users/ANIKET%20GHULE/Documents/NetBeansProjects/Web_Tech_Project/src/java/com/wtproject/helper/Helper.java</file>
+            <file>file:/C:/Users/ANIKET%20GHULE/Documents/NetBeansProjects/Web_Tech_Project/src/java/com/wtproject/servlets/RegisterServlet.java</file>
+            <file>file:/C:/Users/ANIKET%20GHULE/Documents/NetBeansProjects/Web_Tech_Project/src/java/com/wtproject/helper/ConnectionProvider.java</file>
+            <file>file:/C:/Users/ANIKET%20GHULE/Documents/NetBeansProjects/Web_Tech_Project/web/error_page.jsp</file>
+            <file>file:/C:/Users/ANIKET%20GHULE/Documents/NetBeansProjects/Web_Tech_Project/web/js/MyNewJS.js</file>
+            <file>file:/C:/Users/ANIKET%20GHULE/Documents/NetBeansProjects/Web_Tech_Project/src/java/com/wtproject/dao/UserDao.java</file>
+            <file>file:/C:/Users/ANIKET%20GHULE/Documents/NetBeansProjects/Web_Tech_Project/web/js/add_post.js</file>
+            <file>file:/C:/Users/ANIKET%20GHULE/Documents/NetBeansProjects/Web_Tech_Project/web/contact.jsp</file>
             <file>file:/C:/Users/ANIKET%20GHULE/Documents/NetBeansProjects/Web_Tech_Project/web/index.jsp</file>
             <file>file:/C:/Users/ANIKET%20GHULE/Documents/NetBeansProjects/Web_Tech_Project/web/register.jsp</file>
-            <file>file:/C:/Users/ANIKET%20GHULE/Documents/NetBeansProjects/Web_Tech_Project/src/java/com/wtproject/servlets/LogoutServlet.java</file>
         </group>
     </open-files>
 </project-private>

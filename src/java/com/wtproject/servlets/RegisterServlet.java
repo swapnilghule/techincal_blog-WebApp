@@ -45,13 +45,10 @@ public class RegisterServlet extends HttpServlet {
                 String email=request.getParameter("user_email");
                 String password=request.getParameter("user_password");
                 String confirm_password=request.getParameter("confirm_password");
-                String dob=request.getParameter("user_dob");
-                String rollno=request.getParameter("user_rollno");
-                String regid=request.getParameter("user_regid");
-                String Pno=request.getParameter("user_no");
+                String about=request.getParameter("about");
                 
                 //cretae user object and set that all object
-                Users user=new Users(name,email,password,confirm_password,dob,rollno,regid,Pno);
+                Users user=new Users(name,email,password,confirm_password,about);
                 // create user dao object
                 UserDao dao=new UserDao(ConnectionProvider.getConnection());
              //   out.println(ConnectionProvider.getConnection());
