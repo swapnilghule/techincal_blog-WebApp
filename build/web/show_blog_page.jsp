@@ -1,3 +1,4 @@
+<%@page import="com.wtproject.dao.LikeDao"%>
 <%@page import="com.wtproject.dao.UserDao"%>
 <%@page import="com.wtproject.entities.Post"%>
 <%@page import="java.util.ArrayList"%>
@@ -45,7 +46,9 @@ Post p=d.getPostByPostId(postId);
           <link href="css/post.css" rel="stylesheet" type="text/css"/>
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
           <link href="css/mystyle.css" rel="stylesheet" type="text/css"/>
-          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">     
+         <div id="fb-root"></div>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/mr_IN/sdk.js#xfbml=1&version=v10.0" nonce="wDSLh3C4"></script>          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">     
     </head>
     <body>
         
@@ -55,6 +58,7 @@ Post p=d.getPostByPostId(postId);
 <script src="js/add_post.js" type="text/javascript"></script>
 <script src="js/load_post.js" type="text/javascript"></script>
 <script src="js/profile.js" type="text/javascript"></script>
+<script src="js/LikeJS.js" type="text/javascript"></script>
 
           
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
@@ -140,7 +144,7 @@ Post p=d.getPostByPostId(postId);
                        
                        </div>
                    </div>
-                   <p class="post-content"><%=p.getpContent()%></p> 
+                   <prev class="post-content"><%=p.getpContent()%></prev> 
                    
                    
                   
@@ -156,8 +160,20 @@ Post p=d.getPostByPostId(postId);
                
                
                <div class="footer primary-background">
-                   <p class="bg-light"> Powered by Tech Blog </p>
+                   
+                   <% 
+                       LikeDao ld=new LikeDao(ConnectionProvider.getConnection());
+                   %>
+                   <a href="#!" onclick="doLike(<%= p.getPid()%> , <%= user.getId()%>)" class="btn-outline-light btn-sm"><i class="fa fa-thumbs-o-up"><span class="like-counter"><%= ld.CountLikeOnPost(p.getPid())%></span></i></a>
+                    <a href="#!" class="btn-outline-light btn-sm"><i class="fa fa-commenting-o">20</i></a>
                </div>
+                    
+                <div class="card-footer">
+                    <div class="fb-comments" data-href="http://localhost:8080/Web_Tech_Project/show_blog_page.jsp?post_id=<%=p.getPid()%>" data-width="" data-numposts="5"></div>
+                </div>
+
+                    <p class="bg-light"> Powered by Tech Blog </p>
+
            </div>
                
                

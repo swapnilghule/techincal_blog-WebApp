@@ -1,10 +1,15 @@
+<%@page import="com.wtproject.entities.Users"%>
+<%@page import="com.wtproject.dao.LikeDao"%>
 <%@page import="com.wtproject.dao.PostDao"%>
 <%@page import="java.util.List"%>
 
 <%@page import="com.wtproject.entities.Post"%>
 <%@page import="com.wtproject.helper.ConnectionProvider"%>
+<body>
+    <script src="js/LikeJS.js" type="text/javascript"></script>
 <div class="row">
 <%
+    Users uuu=(Users) session.getAttribute("currentUser");
     PostDao d= new PostDao(ConnectionProvider.getConnection());
     int cid=Integer.parseInt(request.getParameter("cid"));
             List<Post> posts=null;
@@ -37,8 +42,11 @@
         </div>
             <div class="card-footer primary-background mt-3 text-center">
                 <a href="show_blog_page.jsp?post_id=<%= p.getPid()%>" class="btn-outline-light btn-sm">Read More</a>
-                <a href="#!" class="btn-outline-light btn-sm"><i class="fa fa-thumbs-o-up">10</i></a>
-                <a href="#!" class="btn-outline-light btn-sm"><i class="fa fa-commenting-o">20</i></a>
+              <% 
+                       LikeDao ld=new LikeDao(ConnectionProvider.getConnection());
+                   %>
+                   <a href="#!" onclick="doLike(<%= p.getPid()%> , <%= uuu.getId()%>)" class="btn-outline-light btn-sm"><i class="fa fa-thumbs-o-up"><span class="like-counter"><%= ld.CountLikeOnPost(p.getPid())%></span></i></a>
+                    <a href="#!" class="btn-outline-light btn-sm"><i class="fa fa-commenting-o">20</i></a>
 
             </div>
     </div>
@@ -49,5 +57,7 @@
 
 %>
 </div>
+
+</body>
 
 
