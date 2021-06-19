@@ -1,3 +1,18 @@
+
+# techincal_blog-WebApp
+# Title: 
+“Technical Blog webapp.”
+# Description:
+This is mini project where technical people can do the post regarding their preferred domain and viewers can view all the post posted by blogger. 
+It consists tasks of profile management, user posts like management, post management and showing post to other users, comment management.
+# Programming language/ Technology used:
+Apache tomcat Server, JSP, java Servlet, Bootstrap-5, JavaScript, Ajax, CSS, IDE used Apache NetBeans. 
+# Role: 
+Developer and Tester
+
+
+# Screenshots: 
+
 ![Screenshot (672)](https://user-images.githubusercontent.com/67332665/122633116-86607c80-d0f4-11eb-8212-ae75b27e93e8.png)
 ![Screenshot (673)](https://user-images.githubusercontent.com/67332665/122633118-88c2d680-d0f4-11eb-9a7b-0b719717978a.png)
 ![Screenshot (674)](https://user-images.githubusercontent.com/67332665/122633122-89f40380-d0f4-11eb-87fa-4a70eac7d5b6.png)
@@ -26,13 +41,3 @@
 ![Screenshot (697)](https://user-images.githubusercontent.com/67332665/122633178-bb6ccf00-d0f4-11eb-8de4-693ad23c2ac0.png)
 ![Screenshot (698)](https://user-images.githubusercontent.com/67332665/122633181-be67bf80-d0f4-11eb-96e4-b0d781944cbf.png)
 ![Screenshot (699)](https://user-images.githubusercontent.com/67332665/122633182-c0318300-d0f4-11eb-8989-5d9b858b1673.png)
-# techincal_blog-WebApp
-# Title: 
-“Technical Blog webapp.”
-# Description:
-This is mini project where technical people can do the post regarding their preferred domain and viewers can view all the post posted by blogger. 
-It consists tasks of profile management, user posts like management, post management and showing post to other users, comment management.
-# Programming language/ Technology used:
-Apache tomcat Server, JSP, java Servlet, Bootstrap-5, JavaScript, Ajax, CSS, IDE used Apache NetBeans. 
-# Role: 
-Developer and Tester
